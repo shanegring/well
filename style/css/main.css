@@ -8348,7 +8348,7 @@ button.close {
   background-position: center center;
   background-size: cover;
   min-height: 800px;
-  z-index: 10px;
+  z-index: 10;
 }
 
 .hero-text {
@@ -8368,15 +8368,16 @@ button.close {
 
 .b-left-img {
   background-position: top left;
-  margin-top: -50px;
   background-repeat: no-repeat;
   background-color: #f4f3f4;
-  z-index: 0px;
+  z-index: 1;
+  min-height: 800px;
 }
 
 .b-left-text {
   padding-top: 300px;
-  padding-left: 200px;
+  width: 65%;
+  margin: auto;
   margin-bottom: 0px !important;
 }
 
@@ -8392,6 +8393,10 @@ button.close {
   height: 400px;
   margin: auto;
   padding-top: 100px;
+}
+
+.b-right-text p {
+  padding-top: 15px;
 }
 
 .b-divide-line {
@@ -8423,7 +8428,7 @@ nav a {
   border-style: solid;
   border-color: #11709f;
   color: #11709f;
-  font-family: "Filson Soft", Helvetica, sans-serif;
+  font-family: "FilsonSoft", Helvetica, sans-serif;
   width: 220px;
   height: 61px;
   padding: 15px 32px;
@@ -8439,7 +8444,25 @@ nav a {
   color: white;
 }
 
+.arrows {
+  font-family: FilsonSoft;
+  color: #88d6e2;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 a {
+  font-family: "FilsonSoft", Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #88d6e2;
+}
+
+a:hover {
+  color: #11709f;
   text-decoration: none;
 }
 
@@ -8465,7 +8488,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Filson Soft", Helvetica, sans-serif;
+  font-family: "FilsonSoft", Helvetica, sans-serif;
   color: #37474f;
   font-size: 28px;
   font-style: italic;
