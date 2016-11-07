@@ -7,27 +7,24 @@ a {
 }
 
 h1 {
-  font: $font-stack;
+  font-family: $font-stack;
   color:  $blue;
   font-size: 80px;
   line-height: 85px;
-  text-align: left;
 }
 
 h2 {
-  font: $font-stack;
+  font-family: $font-stack;
   color:  $blue;
   font-size: 54px;
   line-height: 60px;
-  text-align: left;
 }
 
 h3 {
-  font: $font-stack;
+  font-family: $font-stack;
   color:  #37474f;
   font-size: 36px;
   line-height: 46px;
-  text-align: left;
 }
 
 h4 {
@@ -36,18 +33,18 @@ h4 {
   font-size: 28px;
   font-style: italic;
   line-height: 46px;
+  text-transform: uppercase;
 }
 
 h5 {
-  font: $font-stack;
+  font-family: $font-stack;
   color:  #53565a;
   font-size: 24px;
   line-height: 38px;
-  text-align: left;
 }
 
 p {
-  font: $font-stack;
+  font-family: $font-stack;
   color:  #53565a;
   font-size: 18px;
   line-height: 28px;
