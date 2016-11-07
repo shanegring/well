@@ -2,10 +2,24 @@
 // MODULE C
 
 .c-text {
-font-family: FilsonSoftBook;
+font-family: $text-;
 color:  #37474f;
 font-size: 28px;
 font-style: italic;
 line-height: 46px;
 text-align: center;
+text-transform: none;
+}
+
+
+.c-title {
+	display: inline-block;
+	margin:0px;
+}
+
+}
+
+.c-image img{
+	width: 75px;
+	height: 75px;
 }
