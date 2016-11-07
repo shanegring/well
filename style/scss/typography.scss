@@ -1,11 +1,10 @@
+body {
+ 
+}
 
-//------------------------------------------------------------------------------
-// fonts
-
-$font-stack:    MuseoSans, sans-serif;
-$blue: #11709f;
-
-
+a {
+  text-decoration: none;
+}
 
 h1 {
   font: $font-stack;
@@ -54,9 +53,3 @@ p {
   line-height: 28px;
   text-align: left;
 }
-
-
-
-
-
-
