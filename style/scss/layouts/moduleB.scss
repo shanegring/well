@@ -1,5 +1,40 @@
 //------------------------------------------------------------------------------
-// Abstract
+// MODULE B
 
 
 
+.b-left-img {
+  background-position: top left;
+  margin-top: -50px;
+  background-repeat: no-repeat;
+  background-color: #f4f3f4;
+  z-index: 0px;
+}
+
+
+.b-left-text {
+	padding-top: 300px;
+	padding-left: 200px;
+	margin-bottom: 0px !important;
+}
+
+
+.b-line {
+width:50px;
+border-top:3px solid $blue;
+ height:1px;   
+}
+
+
+.b-right-text {
+	background-color:  #ffffff;
+	width: 60%;
+	height: 400px;
+	margin: auto;
+	padding-top: 100px;
+
+}
+
+.b-divide-line {
+border-top:1px solid gray;   
+}
