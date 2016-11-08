@@ -14,17 +14,38 @@ text-transform: none;
 .c-title {
 	display: inline-block;
 	margin:0px;
+	padding-left: 10px;
+	text-align: left;
 }
 
+.c-user {
+	text-align: center;
+
+}
 
 .c-image img{
 	width: 75px;
 	height: 75px;
+	display: inline-block;
 }
 
 
 .c-line {
 width:50px;
 border-top:3px solid $blue;
- height:1px;   
+ height:1px;
+ text-align: center;   
+}
+
+
+.c-user .c-title .name {
+	color: #53565a; 
+	display: inline-block; 
+	margin-top:5px; 
+	margin-bottom: 0px;
+}
+
+.c-user .c-title .title {
+	color: #53565a; 
+	margin:1px;
 }
