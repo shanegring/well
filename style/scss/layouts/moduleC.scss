@@ -2,7 +2,6 @@
 // MODULE C
 
 .c-text {
-font-family: $text-;
 color:  #37474f;
 font-size: 28px;
 font-style: italic;
@@ -17,9 +16,15 @@ text-transform: none;
 	margin:0px;
 }
 
-}
 
 .c-image img{
 	width: 75px;
 	height: 75px;
+}
+
+
+.c-line {
+width:50px;
+border-top:3px solid $blue;
+ height:1px;   
 }
