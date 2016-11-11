@@ -14,3 +14,43 @@ background-color:  $dark-grey;
 
 }
 
+
+.column-header {
+	font-family: $font-stack;
+	color:  #ffffff;
+	font-size: 1em;/* Approximation due to font substitution */
+	font-weight: 700;
+	line-height: 2.875;/* Approximation due to font substitution */
+	text-align: left;
+	transform: scaleX(1.0038);/* width and height properties ommitted due to transform */
+	text-transform: uppercase;
+}
+
+
+.column-section {
+	font-family: $font-stack;
+	color:  #88d6e2;
+	font-size: 0.875em;
+	line-height: 2;
+	text-align: left;
+	transform: scaleX(1.0038);
+}
+
+
+.bottom-line {
+	font-family: $font-stack;
+	color:  #ffffff;
+	font-size: 1em;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 2.875;/* Approximation due to font substitution */
+	text-align: center;
+	transform: scaleX(1.0011);/* width and height properties ommitted due to transform */
+}
+
+.section-description {
+font-family: $font-stack;
+color:  #ffffff;
+font-size: 0.875em;/* Approximation due to font substitution */
+line-height: 1.571;/* Approximation due to font substitution */
+text-align: left;
+}
