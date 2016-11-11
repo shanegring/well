@@ -8457,34 +8457,14 @@ button.close {
 
 .footer-background {
   background-color: #53565B;
-  height: 793px;
 }
 
 .footer-background li {
   list-style-type: none;
 }
 
-.footer-detail {
-  list-style: list-deco;
-}
-
-nav {
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
+.show-on-hover:hover > ul.dropdown-menu {
   display: block;
-  padding: 5px 10px;
 }
 
 .primary-button {

@@ -19,14 +19,69 @@
 
     <style>
 
-
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;    
+}
 
     </style>
     
 
 <!-- Navigation -->
 
-    <nav>
+    
+
+    <nav class="navbar navbar-ct-primary" style="z-index: 10">
+
+              <div class="container" style="padding-top: 10px">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#"><img class="img-responsive" src="../well/style/assets/logo/IWBI-Black_TM.png" style="max-width: 150px" /></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" style="color: black">Our Standard</a></li>
+                    <li><a href="#" style="color: black">Your Community</a></li>
+                  </ul>
+
+                
+
+                    <ul class="nav navbar-nav pull-right">
+
+                    <li>
+                        <div class="btn-group show-on-hover pull-right">
+                          <button type="button" class="dropdown-toggle" data-toggle="dropdown" style="padding: 15px; border: 0px solid black; background-color: transparent;">
+                            Region <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">North America</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Middle East</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Europe</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">China</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">India</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li class="active"><a href="#" style="color: black;">Sign-in<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" style="color: black;">Log-in</a></li>
+                  </ul>
+
+
+
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+        
     </nav>
 
 
@@ -41,7 +96,7 @@
 <!-- "A" module -->
 
 
-    <div class="col-md-12">
+    <div class="col-md-12" style="margin-top: -75px; z-index: 1">
         <div class="row">
             <div class="hero-image" style="background: url('../well/style/assets/img/well-background.png')";>
             
@@ -212,56 +267,87 @@
     
         <footer class="col-md-12 footer-background">
 
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class="col-md-6 pull-left">
+                    <img src="../well/style/assets/logo/IWBI_Logo_whitesolid_TM.png" style="max-width: 150px; margin-left: 10px; margin-top: 20px; text-align: left; " />
+                </div>
+
+                <div class="col-md-6 pull-right">
+                <div class="form-group" style="margin-top: 50px">
+                    <div class="input-group">
+                      
+                      <input class="form-control" placeholder="Enter email to get updates" type="text" style="border-width: 0px; border-radius: 0px; background-color: transparent; border-bottom: 1px solid white; -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.0); box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);">
+                      <span></span>
+                       <span class="input-group-btn" style="padding-left: 10px">
+                        <button class="btn btn-primary" type="button" style="background-color: grey">Sign Up</button>
+                      </span>
+                    </div>
+              </div>
+              </div>
+
+            </div>
+        </div>
+
+
             <div class="row footer-detail">
 
                 <div class="col-md-4">
-                    <h5>About Us</h5>
-                    <p>The International WELL Building Institute (IWBI) is a public benefit corperation whose mission is to improve human health and well-being in buildings anc communities across the world through its WELL Building Standard (WELL). </p>
-
+                    <h5 style="color:white">About Us</h5>
+                    <p style="color:white">The International WELL Building Institute (IWBI) is a public benefit corperation whose mission is to improve human health and well-being in buildings anc communities across the world through its WELL Building Standard (WELL). </p>
                     <a>Learn more about us</a>
-
                 </div>
 
 
-                <div class="col-md-2">
-                    <h5>Directory</h5>
-                        <ul>
+                <div class="col-md-2" style="text-align: left">
+                    <h5 style="color:white">Directory</h5>
+                        <ul style="padding-left: 0px">
                             <li><a src="">People</li>
                             <li><a src="">Projects</li>
                         </ul>
-
                 </div>
 
-                <div class="col-md-2">
-                    <h5>Resources</h5>
-                        <ul>
+                <div class="col-md-2" style="text-align: left">
+                    <h5 style="color:white">Resources</h5>
+                        <ul style="padding-left: 0px">
                             <li><a src="">Resource Library</li>
                             <li><a src="">Articles</li>
                             <li><a src="">Press</li>
                          </ul>
                 </div>
 
-                 <div class="col-md-2">
-                    <h5>Take Action</h5>
-                         <ul>
+                 <div class="col-md-2" style="text-align: left">
+                    <h5 style="color:white">Take Action</h5>
+                         <ul style="padding-left: 0px">
                             <li><a src="">Certification</li>
                             <li><a src="">WELL Building Standard</li>
                             <li><a src="">WELL AP</li>
                          </ul>
-
                 </div>
 
-                 <div class="col-md-2">
-                    <h5>Help</h5>
-                        <li><a src="">X</li>
-                            <li><a src="">X</li>
-
+                 <div class="col-md-2" style="text-align: left">
+                    <h5 style="color:white">Help</h5>
+                    <ul style="padding-left: 0px">
+                        <li><a src="">Contact Us</li>
+                        <li><a src="">FAQ</li>
+                        <li><a src="">Legal</li>
+                    </ul>
                 </div>
 
 
-                </div>
-            
             </div>
+
+
+            <div class="social-media row">
+                <h5 style="color:white">Follow Us</h5>
+                <p style="color:white">Facebook, Twitter, Instagram</p>
+            </div>
+
+
+            <div class="row">
+                <h6 style="color:white; text-align: center"> 2016 International Living Future Institute</h6>
+          
     
 
         </footer>
