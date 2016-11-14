@@ -4,46 +4,91 @@
 
 
 
+
+
 .card {
-  background-color: #FFFFFF;
-  color: #252422;
   margin-bottom: 20px;
   position: relative;
-  z-index: 1; }
+  z-index: 1; 
+  min-height: 490px;
+
+}
+
 
 .card-raised {
   box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.55);
 }
 
-.card-user .image {
+
+// Image Cards
+
+.card-image {
+  background-color: #FFFFFF;
+  color: #252422;
+}
+
+.card-image .image {
   height: 271px;
   position: relative;
   overflow: hidden; 
   width: 100%;
 }
 
-
-.card-user .image img {
+.card-image .image img {
     width: 100%;
     height: 271px; }
 
-.card-user .title {
+.card-image .content {
+  min-height: 179px;
+  background-color: white; 
+  padding: 10px
+}
+
+.card-image .content .tag {
   line-height: 24px; 
   color: $blue;
   margin-top: 0px;
   }
 
-.card-user .content {
-  min-height: 179px;
-  background-color: white; 
-  padding: 10px
-
+.card-image .description {
+  color: gray; 
 }
 
-.card .description {
+.card-image h6 {
+  margin: 0; 
+}
 
-  color: #66615b; }
 
-.card h6 {
 
-  margin: 0; }
+// Solid Color Cards
+
+
+.card-solid-color {
+  background-color: $aqua-blue;
+  color: white;
+}
+
+.card-solid-color .content{
+  padding: 20px;
+  text-align: left;
+}
+
+
+.card-solid-color .tag {
+  color: white;
+  margin-top: 10px;
+  }
+
+.card-solid-color .content .title {
+  text-align: left; 
+  color: white;
+  margin-top: 20%;
+  overflow: hidden;
+  }
+
+
+.card-solid-color .content .description {
+  text-align: left;
+  color: white;
+}
+
