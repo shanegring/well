@@ -1,0 +1,75 @@
+
+
+// Module A Down Arrow
+
+.demo {
+    margin: auto;
+    right: 0;
+    bottom: 0;    
+    width: 400px;
+    height: 220px;
+    padding-top: 120px;
+}
+
+.container2 {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    position: relative;
+    margin: 0 auto;
+}
+
+.triangle2 {
+    position: absolute;
+    margin: auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    background: transparent;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    border-radius: 4px;
+}
+
+
+
+// Module B Corner Arrow
+
+.corner-triangle {
+  position: relative;
+  padding: 40px;
+  background-color: white;
+}
+
+.corner-triangle:last-child {
+  margin-bottom: 0;
+}
+
+.corner-triangle:before, .corner-triangle:after {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  //top: 0;
+  right: 0;
+  content: "";
+}
+.corner-triangle:before {
+  border-top: solid 20px transparent;
+  border-right: solid 20px transparent;
+  border-left: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+}
+.corner-triangle:after {
+  border-bottom: solid 40px $blue;
+  border-left: solid 40px white;
+  border-right: solid 40px $blue;
+  border-top: solid 40px white;
+}
