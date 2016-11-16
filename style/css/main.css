@@ -8354,6 +8354,9 @@ button.close {
   letter-spacing: 3px;
   font-size: 40px;
   line-height: 50px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -8381,19 +8384,26 @@ button.close {
   }
 }
 
-.b-left-img {
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-color: #f4f3f4;
-  z-index: 1;
-  min-height: 800px;
+.b-left {
+  background-color: #01AEBE;
 }
 
-.b-left-text {
-  padding-top: 300px;
-  width: 65%;
-  margin: auto;
-  margin-bottom: 0px !important;
+.b-left .box {
+  border: 3px solid white;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 50px;
+  padding-left: 50px;
+  z-index: 10;
+}
+
+.b-left h2 {
+  color: white;
+}
+
+.b-left p {
+  margin-top: 50px;
+  font-weight: 100;
 }
 
 .b-line {
@@ -8402,12 +8412,23 @@ button.close {
   height: 1px;
 }
 
-.b-right-text {
-  background-color: #ffffff;
-  width: 60%;
-  height: 400px;
-  margin: auto;
-  padding-top: 100px;
+.new-right .box-1 {
+  background-color: white;
+  margin-top: 10%;
+  padding-right: 25px;
+  padding-left: 25px;
+  overflow: hidden;
+}
+
+.new-right h3 {
+  color: #1CAEBD;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.new-right p {
+  margin-top: 25px;
+  font-weight: 100;
 }
 
 .b-right-text p {
