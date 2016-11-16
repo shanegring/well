@@ -55,19 +55,37 @@
 .corner-triangle:before, .corner-triangle:after {
   display: block;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  //top: 0;
+  width: 30px;
+  height: 30px;
+  bottom: 0;
   right: 0;
   content: "";
 }
 
 .corner-triangle:after {
-  border-bottom: solid 40px $aqua-blue;
-  border-left: solid 40px white;
-  border-right: solid 40px $aqua-blue;
-  border-top: solid 40px white;
+  border-bottom: solid 30px $aqua-blue;
+  border-left: solid 30px white;
+  border-right: solid 30px $aqua-blue;
+  border-top: solid 30px white;
 }
+
+
+
+.corner-triangle i {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 0;
+  right: 0;
+  content: "";
+  z-index: 10;
+  color: white;
+}
+
+
+
+
 
 
 
