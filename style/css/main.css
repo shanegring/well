@@ -8343,14 +8343,6 @@ button.close {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
-.hero-image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 90vh;
-}
-
 .hero-text {
   text-align: center;
   padding-top: 200px;
@@ -8365,6 +8357,13 @@ button.close {
 .hero-button {
   text-align: center;
   text-transform: uppercase;
+}
+
+.hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/office-www-2.jpg") no-repeat center center;
+  height: 99vh;
+  background-size: cover;
+  margin-top: -75px;
 }
 
 .b-left-img {
@@ -8384,7 +8383,7 @@ button.close {
 
 .b-line {
   width: 50px;
-  border-top: 3px solid #11709f;
+  border-top: 3px solid #53575B;
   height: 1px;
 }
 
@@ -8409,11 +8408,17 @@ button.close {
   /* flexbox is soo good */
   flex-direction: row;
   /*can be row or column */
+  flex-wrap: wrap;
 }
 
 .child {
-  /*not completely necessary, but this says how wide .child should be by default (% of .parent)*/
-  /*   these things don't matter either */
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .child {
+    width: 50%;
+  }
 }
 
 .c-text {
@@ -8427,8 +8432,6 @@ button.close {
 
 .c-title {
   display: inline-block;
-  margin: 0px;
-  padding-left: 10px;
   text-align: left;
 }
 
@@ -8436,29 +8439,75 @@ button.close {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .c-user {
+    text-align: left;
+    margin-top: 30px;
+  }
+}
+
 .c-image img {
-  width: 75px;
-  height: 75px;
+  min-width: 75px;
+  min-height: 75px;
   display: inline-block;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .c-image img {
+    margin-top: 0px;
+  }
 }
 
 .c-line {
   width: 50px;
-  border-top: 3px solid #11709f;
+  border-top: 3px solid black;
   height: 1px;
-  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .c-line {
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
 }
 
 .c-user .c-title .name {
   color: #53565a;
-  display: inline-block;
-  margin-top: 5px;
   margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .c-user .c-title .name {
+    text-align: left;
+    margin-top: 0px;
+  }
 }
 
 .c-user .c-title .title {
-  color: #53565a;
-  margin: 1px;
+  color: #43b1bc;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .c-user .c-title .title {
+    text-align: left;
+    margin-top: 0px;
+  }
 }
 
 .d-background {
@@ -8533,6 +8582,11 @@ button.close {
   display: block;
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .primary-button {
   background-color: transparent;
   border: 2px;
@@ -8553,7 +8607,7 @@ button.close {
 .primary-button:hover {
   background-color: white;
   border: none;
-  color: white;
+  color: #43b1bc;
 }
 
 .arrows {
@@ -8798,18 +8852,37 @@ ul.pagination li a:hover:not(.active) {
   content: "";
 }
 
-.corner-triangle:before {
-  border-top: solid 20px transparent;
-  border-right: solid 20px transparent;
-  border-left: solid 20px transparent;
-  border-bottom: solid 20px transparent;
+.corner-triangle:after {
+  border-bottom: solid 40px #43b1bc;
+  border-left: solid 40px white;
+  border-right: solid 40px #43b1bc;
+  border-top: solid 40px white;
 }
 
-.corner-triangle:after {
-  border-bottom: solid 40px #11709f;
-  border-left: solid 40px white;
-  border-right: solid 40px #11709f;
-  border-top: solid 40px white;
+.big-corner-triangle {
+  position: relative;
+  z-index: -1;
+}
+
+.big-corner-triangle:last-child {
+  margin-bottom: 0;
+}
+
+.big-corner-triangle:before, .big-corner-triangle:after {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  content: "";
+}
+
+.big-corner-triangle:after {
+  border-bottom: solid 100px black;
+  border-left: solid 100px transparent;
+  border-right: solid 100px black;
+  border-top: solid 100px transparent;
 }
 
 a {

@@ -21,7 +21,7 @@
 
 .b-line {
 width:50px;
-border-top:3px solid $blue;
+border-top:3px solid #53575B;
  height:1px;   
 }
 
@@ -44,15 +44,27 @@ border-top:1px solid gray;
 }
 
 
+
+
+
+
 .parent {
   display: flex; /* flexbox is soo good */
   flex-direction: row; /*can be row or column */
+  flex-wrap: wrap;
+
+  @include media (">=tablet") {
+  	
+  }
+
   
 }
 
 .child {
- /*not completely necessary, but this says how wide .child should be by default (% of .parent)*/
-  
-/*   these things don't matter either */
+	width: 100%;
 
+	@include media (">=tablet") {
+	 width: 50%;
+	}
 }
+

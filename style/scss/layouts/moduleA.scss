@@ -7,13 +7,13 @@
 // Header
 
 
-.hero-image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 90vh;
-}
+//.hero-image {
+//  -webkit-background-size: cover;
+//  -moz-background-size: cover;
+ // -o-background-size: cover;
+ // background-size: cover;
+ // height: 90vh;
+//}
 
 .hero-text {
 	text-align: center;
@@ -29,4 +29,12 @@
 .hero-button {
 	text-align: center;
 	text-transform: uppercase;
+}
+
+
+.hero-image {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/office-www-2.jpg') no-repeat center center; 
+height: 99vh; 
+background-size: cover; 
+margin-top: -75px
 }

@@ -24,16 +24,15 @@
 }
 
 .stripe {
-background-image: linear-gradient(
-    to left top,
-    transparent 33%,
-    gray 33%,
-    gray 66%,
-    transparent 66%
-);
-background-size: 3px 3px;
+    background-image: linear-gradient(-45deg, #E6E6E6 25%, transparent 25%, transparent 50%, #E6E6E6 50%, #E6E6E6 75%, transparent 75%, transparent);
+    background-size: 10px 10px;
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    color: blue;
+}
 
 
     </style>
@@ -87,7 +86,7 @@ background-size: 3px 3px;
                         </div>
                     </li>
                     <li class="active"><a href="#" style="color: white;">Sign-in<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#" style="color: white; border: px solid white">Log-in</a></li>
+                    <li><a href="#" style="color: white; border: 1px solid white">Log-in</a></li>
                   </ul>
 
 
@@ -112,7 +111,7 @@ background-size: 3px 3px;
     <div class="col-md-12" style="margin-top: -100px;">
         <div class="row">
             
-            <div class="hero-image" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../well/style/assets/img/office-www-2.jpg') no-repeat center center; height: 99vh; background-size: cover; margin-top: -75px">
+            <div class="hero-image">
 
 
                 <div class="col-md-6 col-md-offset-3">
@@ -157,15 +156,15 @@ background-size: 3px 3px;
 
 
   
-             <div class="child col-md-6">
-                    <div class="row" style="background-color: #01AEBE;">
+             <div class="child col-md-6 col-xs-12">
+                    <div class="row big-corner-triangle" style="background-color: #01AEBE; ">
 
-                        <div class="container" style="width: 85%; padding-top: 10%; padding-bottom: 10%">
+                        <div class="container" style="width: 85%; padding-top: 10%; padding-bottom: 10%; z-index: 10">
 
-                            <div class="" style="border: 3px solid white; padding-top: 30%; padding-bottom: 30%; padding-right: 25px; padding-left: 25px">
-                                <h2 style="color: white">BETTER BUILDINGS ARE WELL</h2>
-                                <div class="b-line" style="margin-top: 25px"></div>
-                                <p style="margin-top: 25px">The way that buildings are designed, constructed and maintained impacts the way we sleep, what we eat, and how we feel. The WELL Building Standard uses innovative, research-backed strategies to advance health, happiness and mindfulness in our buildings and communities.</p>
+                            <div class="box" style="border: 3px solid white; padding-top: 15%; padding-bottom: 15%; padding-right: 50px; padding-left: 50px; z-index: 10">
+                                <h2 style="color: white;">BETTER BUILDINGS ARE WELL</h2>
+                                <div class="b-line" style="margin-top: 50px"></div>
+                                <p style="margin-top: 50px; font-weight: 100">The way that buildings are designed, constructed and maintained impacts the way we sleep, what we eat, and how we feel. The WELL Building Standard uses innovative, research-backed strategies to advance health, happiness and mindfulness in our buildings and communities.</p>
                             </div>
                         </div>
                     </div>
@@ -173,25 +172,27 @@ background-size: 3px 3px;
         
 
           
-              <div class="child col-md-6 stripe" style="background-color: #F2F2F2";>
+              <div class="child col-md-6 col-xs-12 stripe">
                        
                             <div class="container" style="width: 85%; overflow: hidden">
 
                                 <div class="corner-triangle" style="background-color: white; margin-top: 10%; padding-right: 25px; padding-left: 25px; overflow: hidden">
-                                    <h3>Learn our standards</h3>
+                                    <h3 style="color: #1CAEBD; font-size: 1.5em; font-weight: 100">EXPLORE THE STANDARD</h3>
                                     <div class="b-line" style="margin-top: 25px"></div>
-                                    <p style="margin-top: 25px">The way that buildings are designed, constructed and maintained impacts the way we sleep, what we eat, in our buildings and communities.</p>
+                                    <p style="margin-top: 25px; font-weight: 100">Get started with the premier global standard for healthy buildings.</p>
+                            
                                 </div>
                             </div>
                      
 
                        
-                            <div class="container" style="width: 85%; height: auto; padding-top: 10%; padding-bottom: 10%; overflow: hidden">
+                            <div class="container" style="width: 85%; padding-top: 10%; padding-bottom: 10%; overflow: hidden">
 
                                 <div class="corner-triangle" style="background-color: white; padding-top: 10%; padding-right: 25px; padding-left: 25px; overflow: hidden">
-                                    <h3>Join the Revolution</h3>
+                                    <h3 style="color: #1CAEBD; font-size: 1.5em; font-weight: 100">JOIN OUR COMMUNITY</h3>
                                     <div class="b-line" style="margin-top: 25px"></div>
-                                    <p style="margin-top: 25px">The way that buildings are designed, constructed and maintained impacts the way we sleep, what we eat, in our buildings and communities.</p>
+                                    <p style="margin-top: 25px; font-weight: 100">Unite with the industry leaders making wellness in offices, homes and more thier priority.</p>
+                                  
                                 </div>
                             </div>
                 
@@ -215,27 +216,36 @@ background-size: 3px 3px;
     <div class="row" style="max-width: 1100px; margin: auto;">
 
          <div class="c-text">
-            <h1><b>"</b></h1>
+            <img src="../well/style/assets/img/qoute.jpeg" style="max-width: 75px">
         </div>
 
         <div class="c-text">
             <h4>Nothing is as meaningful as hearing directly from our employees that they are happier and more productive than they were before - that they feel healthier.</h4>
         </div>
 
-
+        <div class="col-md-2 col-md-offset-5 col-xs-4 col-xs-offset-4">
         <div class="c-line"></div>
 
-        <div class="c-user">
-
-            <img class="c-image img-circle img-responsive" src="../well/style/assets/img/prateek.jpeg" style="width: 75px; height:75px; display: inline-block;">
-
-            <div class="c-title">
-                <h6 class="name">Lewis C. Horne</h6>
-                <h6 class="title">President of the Southern California Region for CBRE</h6>
-            </div>
-     
-
         </div>
+
+            <div class="col-md-12">
+                <div class="c-user row">
+              
+                    <div class="col-md-2 col-xs-12">
+                        <img class="c-image img-circle img-responsive" src="../well/style/assets/img/prateek.jpeg" style="width: 75px; height:75px; display: inline-block;">    
+                    </div>
+
+                    <div class="col-md-10 col-xs-12">
+                        <div class="c-title" style="text-align: left">
+                            <h6 class="name">Lewis C. Horne</h6>
+                            <h6 class="title">President of the Southern California Region for CBRE</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    
     </div>
 </div>
 
