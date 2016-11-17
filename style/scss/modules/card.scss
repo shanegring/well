@@ -10,13 +10,17 @@
   margin-bottom: 20px;
   position: relative;
   z-index: 1; 
-  min-height: 490px;
 
 }
 
 
 .card-raised {
   box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.55);
+
+  @include media (">=tablet") {
+    box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.55);
+    
+}
 }
 
 
@@ -41,17 +45,31 @@
 .card-image .content {
   min-height: 179px;
   background-color: white; 
-  padding: 10px
+  padding: 20px
 }
 
 .card-image .content .tag {
   line-height: 24px; 
   color: $blue;
   margin-top: 0px;
-  }
+  font-size: .8em;
+  font-weight: 700;
 
-.card-image .description {
-  color: gray; 
+  @include media (">=tablet") {
+    font-size: 1em;
+  }
+}
+
+.card-image .content .description {
+  color: $dark-grey; 
+  font-size: 2em;
+  line-height: 1.2;
+
+
+  @include media (">=tablet") {
+  font-size: 2.5em;
+  line-height: 1.2;
+  }
 }
 
 .card-image h6 {
@@ -66,6 +84,7 @@
 .card-solid-color {
   background-color: $aqua-blue;
   color: white;
+  padding-bottom: 35%;
 }
 
 .card-solid-color .content{
@@ -90,5 +109,8 @@
 .card-solid-color .content .description {
   text-align: left;
   color: white;
+  font-weight: 100;
+  line-height: 1.2;
+
 }
 

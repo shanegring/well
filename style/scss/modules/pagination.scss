@@ -13,18 +13,22 @@ ul.pagination li a {
     margin: 10px;
 }
 
-.circle {
+.pagination {
+
+
+	.circle {
 	height: 20px;
     width: 20px;
     border-radius: 100%;
   	background-color: white;
-    transition: background-color .3s;
+  	padding: 0px;
+	}
 
-}
-
-.arrow {
+	.arrow {
 	background-color: transparent;
-
+	border-width: 0px; 
+	padding-top: 0px;
+	}
 }
 
 ul.pagination li a.active {

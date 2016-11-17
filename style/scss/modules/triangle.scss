@@ -64,9 +64,9 @@
 
 .corner-triangle:after {
   border-bottom: solid 30px $aqua-blue;
-  border-left: solid 30px white;
+  border-left: solid 30px transparent;
   border-right: solid 30px $aqua-blue;
-  border-top: solid 30px white;
+  border-top: solid 30px transparent;
 }
 
 
@@ -95,7 +95,6 @@
 
 .big-corner-triangle {
   position: relative;
-  z-index: -1;
 }
 
 .big-corner-triangle:last-child {
@@ -113,9 +112,9 @@
 }
 
 .big-corner-triangle:after {
-  border-bottom: solid 100px black;
+  border-bottom: solid 100px $dark-grey;
   border-left: solid 100px transparent;
-  border-right: solid 100px black;
+  border-right: solid 100px $dark-grey;
   border-top: solid 100px transparent;
 }
 

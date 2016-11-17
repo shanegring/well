@@ -1,10 +1,15 @@
 //------------------------------------------------------------------------------
 // MODULE B
 
+.b-module {
+	padding-right: 0px; 
+	padding-left: 0px
+}
 
 // LEFT 
-.b-left {
+.new-left {
  	background-color: #01AEBE;
+ 	position: absolute;
 
  	.box {
  		border: 3px solid white; 
@@ -12,25 +17,57 @@
  		padding-bottom: 15%; 
  		padding-right: 50px; 
  		padding-left: 50px; 
- 		z-index: 10;
+ 		z-index: 1;
+ 		overflow: hidden;
+ 		position: relative;
+
+ 	}
+
+ 	.container {
+ 		width: 85%; 
+ 		padding-top: 10%; 
+ 		padding-bottom: 10%; 
+ 		overflow: hidden;
+
  	}
 
  	h2 {
  		color: white;
+ 		font-size: 30px;
+  		line-height: 35px;
+  		margin-top: 5px;
+
+
+ 		@include media (">=tablet") {
+
+ 		font-size: 54px;
+  		line-height: 60px;
+ 		}
  	}
 
  	p {
- 		margin-top: 50px; 
+ 		margin-top: 8%; 
  		font-weight: 100;
+	    font-size: 14px;
+	    line-height: 20px;
+
+
+ 		 @include media (">=tablet") {
+
+ 		 font-size: 18px;
+	  	 line-height: 28px;
+
+  		}
  	}
 }
+
 
 
 
 .b-line {
 width:50px;
 border-top:3px solid #53575B;
- height:1px;   
+margin-top: 25px;   
 }
 
 // RIGHT
@@ -38,15 +75,20 @@ border-top:3px solid #53575B;
 
 
 .new-right {
- 
 
- 	.box-1 {
- 		background-color: white; 
- 		margin-top: 10%; 
+ 
+ 	.box {
+ 		background-color: white;  
  		padding-right: 25px; 
  		padding-left: 25px; 
  		overflow: hidden;
 
+ 	}
+
+ 	.container {
+ 		width: 85%; 
+ 		padding-top: 10%; 
+ 		overflow: hidden;
  	}
 
  	h3 {
@@ -59,43 +101,33 @@ border-top:3px solid #53575B;
  		margin-top: 25px; 
  		font-weight: 100;
  	}
+
+
 }
- 
-
-
-
-
-
-.b-right-text p{
-	padding-top: 15px;
-}
-
-.b-divide-line {
-border-top:1px solid gray; 
-}
-
-
-
 
 
 
 .parent {
-  display: flex; /* flexbox is soo good */
-  flex-direction: row; /*can be row or column */
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-
-  @include media (">=tablet") {
-
-  }
-
-  
-}
+  align-items: stretch;
+ 
 
 .child {
 	width: 100%;
 
+	.stripe {
+    background-image: linear-gradient(-45deg, #E6E6E6 25%, transparent 25%, transparent 50%, #E6E6E6 50%, #E6E6E6 75%, transparent 75%, transparent);
+    background-size: 10px 10px;
+
+	}
+
+
+
 	@include media (">=tablet") {
 	 width: 50%;
 	}
+}
 }
 
