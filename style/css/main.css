@@ -8487,11 +8487,7 @@ button.close {
   }
 }
 
-.c-text {
-  color: #37474f;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 46px;
+.c-text-new {
   text-align: center;
   text-transform: none;
 }
@@ -8805,7 +8801,7 @@ button.close {
   border-style: solid;
   border-color: white;
   color: white;
-  font-family: "FilsonSoft", Helvetica, sans-serif;
+  font-family: "filson-soft", Helvetica, sans-serif;
   width: 220px;
   height: 61px;
   padding: 15px 32px;
@@ -9147,8 +9143,112 @@ ul.pagination li a:hover:not(.active) {
   }
 }
 
+/* Global */
+img {
+  max-width: 100%;
+}
+
 a {
-  font-family: "FilsonSoft", Helvetica, sans-serif;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+a:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=50);
+  /* IE7 */
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.thumbnails li > .fff .caption {
+  background: #fff !important;
+  padding: 10px;
+}
+
+/* Page Header */
+.page-header {
+  background: #f9f9f9;
+  margin: -30px -40px 40px;
+  padding: 20px 40px;
+  border-top: 4px solid #ccc;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.page-header h3 {
+  line-height: 0.88rem;
+  color: #000;
+}
+
+ul.thumbnails {
+  margin-bottom: 0px;
+}
+
+/* Thumbnail Box */
+.caption h4 {
+  color: #444;
+}
+
+.caption p {
+  color: #999;
+}
+
+/* Carousel Control */
+.control-box {
+  text-align: right;
+  width: 100%;
+}
+
+.carousel-control {
+  background: #666;
+  border: 0px;
+  border-radius: 0px;
+  display: inline-block;
+  font-size: 34px;
+  font-weight: 200;
+  line-height: 18px;
+  opacity: 0.5;
+  padding: 4px 10px 0px;
+  position: static;
+  height: 30px;
+  width: 15px;
+}
+
+/* Mobile Only */
+@media (max-width: 767px) {
+  .page-header, .control-box {
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .caption {
+    word-break: break-all;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+::selection {
+  background: #ff5e99;
+  color: #FFFFFF;
+  text-shadow: 0;
+}
+
+::-moz-selection {
+  background: #ff5e99;
+  color: #FFFFFF;
+}
+
+a {
+  font-family: "filson-soft", Helvetica, sans-serif;
   font-size: 16px;
   text-decoration: none;
   color: #88d6e2;
@@ -9181,10 +9281,9 @@ h3 {
 }
 
 h4 {
-  font-family: "FilsonSoft", Helvetica, sans-serif;
+  font-family: "filson-soft", Helvetica, sans-serif;
   color: #37474f;
   font-size: 28px;
-  font-style: italic;
   line-height: 46px;
 }
 
@@ -9196,7 +9295,7 @@ h5 {
 }
 
 h6 {
-  font-family: "FilsonSoft", Helvetica, sans-serif;
+  font-family: "filson-soft", Helvetica, sans-serif;
   font-size: 17.95px;
   font-weight: 400;
   line-height: 30px;

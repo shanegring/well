@@ -17,13 +17,11 @@ $light-gray: #E6E4E5;
 
 
 
-
-
 //------------------------------------------------------------------------------
 // Font Config
 
 $font-stack: "Museo Sans", Helvetica, sans-serif;
-$font-small: "FilsonSoft", Helvetica, sans-serif;
+$font-small: "filson-soft", Helvetica, sans-serif;
 
 $weight-thin:   100;
 $weight-normal: 400;     $weight-regular: $weight-normal;
@@ -45,8 +43,3 @@ $font-size-textbox: in-rems(18px);
 //------------------------------------------------------------------------------
 // Layout
 
-$width--main-column: 760px;
-$width--emojis: 490px;
-$height--page-header: 80px;
-$height--page-footer: 56px;
-$sizing--nav: 60px;
