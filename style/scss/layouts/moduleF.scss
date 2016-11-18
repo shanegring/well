@@ -1,0 +1,62 @@
+//------------------------------------------------------------------------------
+// MODULE F 
+
+
+.info{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+    .icon{
+        margin-top: 0;
+   
+        &.icon-sm{
+       
+        }
+    }
+    h4,
+    .h4{
+        margin-top: 20px;
+        margin-bottom: 5px;   
+    }
+}
+
+.info-horizontal{
+    text-align: left;
+    margin-top: 0;
+
+    .icon{
+        float: left;
+        margin-top: 40px;
+        margin-right: 20px;
+        i {
+            width: 48px;
+        }
+    }
+    .description{
+        overflow: hidden;
+        display: block;
+
+        h4 {
+        	line-height: 1.2em;
+        }
+   
+    }
+    .btn{
+        margin-left: -19px;
+    }
+}
+
+.info{
+    .icon{
+        i {
+            width: 48px;
+        }
+    }
+}
+
+.icon-color{
+    color: $light-blue;
+}
+
+

@@ -8573,6 +8573,10 @@ button.close {
   }
 }
 
+.standard-quote {
+  background-color: #E6E4E5;
+}
+
 .d-background {
   background-color: #e7e6e6;
   padding-top: 60px;
@@ -8594,6 +8598,121 @@ button.close {
   .d-child {
     width: 33%;
   }
+}
+
+.typology {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.typology img {
+  padding-top: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .typology img {
+    padding-top: 5px;
+  }
+}
+
+.typology:after {
+  content: "";
+  position: absolute;
+  padding: 0px;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(to bottom, transparent 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
+  z-index: 1;
+}
+
+.typology-text {
+  display: block;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  padding: 1em;
+  font-weight: 700;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.info {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.info .icon {
+  margin-top: 0;
+}
+
+.info h4,
+.info .h4 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.info-horizontal {
+  text-align: left;
+  margin-top: 0;
+}
+
+.info-horizontal .icon {
+  float: left;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.info-horizontal .icon i {
+  width: 48px;
+}
+
+.info-horizontal .description {
+  overflow: hidden;
+  display: block;
+}
+
+.info-horizontal .description h4 {
+  line-height: 1.2em;
+}
+
+.info-horizontal .btn {
+  margin-left: -19px;
+}
+
+.info .icon i {
+  width: 48px;
+}
+
+.icon-color {
+  color: #88d6e2;
+}
+
+.g-background {
+  background-color: #E6E4E5;
+}
+
+.g-right .hero-text {
+  text-align: left;
+}
+
+.g-right .hero-text h1 {
+  color: red;
+}
+
+.g-right .hero-text p {
+  color: red;
 }
 
 .footer-background {
