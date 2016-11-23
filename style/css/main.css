@@ -8509,8 +8509,8 @@ button.close {
 }
 
 .c-image img {
-  min-width: 75px;
-  min-height: 75px;
+  max-width: 75px;
+  max-height: 75px;
   display: inline-block;
   margin-top: 20px;
 }
@@ -8697,6 +8697,22 @@ button.close {
 
 .icon-color {
   color: #88d6e2;
+}
+
+.g-background {
+  background-color: #E6E4E5;
+}
+
+.g-right .hero-text {
+  text-align: left;
+}
+
+.g-right .hero-text h1 {
+  color: red;
+}
+
+.g-right .hero-text p {
+  color: red;
 }
 
 .g-background {
@@ -9046,6 +9062,33 @@ button.close {
   color: white;
   font-weight: 100;
   line-height: 1.2;
+}
+
+.content-new .price {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: white;
+  border-radius: 50%;
+  width: 152px;
+  height: 152px;
+  margin: 30px auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+
+.content-new .price h4 {
+  margin: 5px 0 0;
+  font-size: 36px;
+}
+
+.content-new .price h6 {
+  margin-top: 45px;
+  font-size: 16px;
+}
+
+.content-new .price .currency {
+  font-size: 22px;
+  font-weight: normal;
 }
 
 .carousel-control {

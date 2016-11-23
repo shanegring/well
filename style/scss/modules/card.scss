@@ -114,3 +114,32 @@
 
 }
 
+
+.content-new{
+        .price{
+            border: 2px solid rgba(255,255,255,.7);
+            color: white;
+            border-radius: 50%;
+            width: 152px;
+            height: 152px;
+            margin: 30px auto;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 200px;
+
+            h4{
+                margin: 5px 0 0;
+                font-size: 36px;
+            }
+
+            h6{
+                margin-top: 45px;
+                font-size: 16px;
+            }
+
+            .currency{
+                font-size: 22px;
+                font-weight: normal;
+            }
+        }
+    }

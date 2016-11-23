@@ -1,5 +1,6 @@
-//------------------------------------------------------------------------------
+
 // MODULE C
+// Centered Quotation Module
 
 
 
@@ -25,8 +26,8 @@ text-transform: none;
 }
 
 .c-image img{
-	min-width: 75px;
-	min-height: 75px;
+	max-width: 75px;
+	max-height: 75px;
 	display: inline-block;
 	margin-top: 20px;
 
