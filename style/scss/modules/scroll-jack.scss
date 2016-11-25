@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+
+.pane, .spacing {
+    padding: 15px!important;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    padding: 40px;
+
+    }
+
+    .content.left {
+    float: left;
+    position: absolute;
+    left: 0;
+}
+}
+
+.content {}
+h1 {
+    font-family: "brandon-grotesque",sans-serif;
+    line-height: 1.05em;
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-family: "brandon-grotesque",sans-serif;
+    line-height: 1.25em;
+    font-size: 1.15em;
+    font-weight: bolder;
+    margin: 0;
+    text-transform: uppercase;
+}
+}
+
+.image-container.right {
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.image-container {
+    top: 50%;
+    max-width: 47%;
+}
+
+.paneOne .content-container {
+
+    background: linear-gradient(135deg, rgba(220,36,36,1) 0%, rgba(53,0,96,1) 100%);
+}
+
+.slide-numbers {
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 86px;
+    z-index: 999;
+}
