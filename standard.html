@@ -36,19 +36,11 @@
 
 
 
-.stripe {
-    background-image: linear-gradient(-45deg, #E6E6E6 25%, transparent 25%, transparent 50%, #E6E6E6 50%, #E6E6E6 75%, transparent 75%, transparent);
-    background-size: 10px 10px;
-}
-   
-}
-}
-
     </style>
     
 
 <!-- Navigation -->
-
+<body>
     
 
     <nav class="navbar">
@@ -62,14 +54,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a href="#"><img class="img-responsive" src="../well/style/assets/logo/IWBI-Black_TM.png" style="max-width: 170px; margin-top:20px" /></a>
+                  <a href="index.html"><img class="img-responsive" src="../well/style/assets/logo/IWBI-Black_TM.png" style="max-width: 170px; margin-top:20px" /></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" style="color: black">Our Standard</a></li>
-                    <li><a href="#" style="color: black">Your Community</a></li>
+                    <li class="active"><a href="standard.html" style="color: black">Our Standard</a></li>
+                    <li><a href="community.html" style="color: black">Your Community</a></li>
                   </ul>
 
                 
@@ -107,49 +99,112 @@
 
 
 
-<!-- Body -->
-    <body>
-
-
-
-
 
 <!-- "G" module -->
 
-<div class="col-md-12 stripe" style="height: 90vh; margin-top: -150px";>
-    <div class="col-md-10 col-md-offset-1">
-        
-        <div class="row" style="padding-top: 250px";>
+<div id="wrapper">
+
+    <ul id="jumpMenu">
+        <li><a href="#one" class="active"></a></li>
+        <li><a href="#two"></a></li>
+        <li><a href="#three"></a></li>
+    </ul>
 
 
-                <div class="col-md-6">
+<!-- ===================================== ONE ===================================== -->
 
 
-                </div>
+        <section id="one" class="segments" style="height: 100vh">
 
-                <div class="col-md-6" style="padding-right: 100px">
+        <div class="block">
                 
-                
-                        <h2 style="text-align: left">Make health a priority</h2> 
-                        <p style="text-align: left; padding-top: 20px">The WELL Building Standard is the leading tool for advancing health & well-being in buildings and communities globally. </p>
+                <div class="col-md-12";>
+                    <div class="col-md-10 col-md-offset-1">
+                            <div class="row";>
+                                <div class="col-md-6">
+                                </div>
 
-                        <a href="#" style="padding-top: 20px; color: black; display: block"><b>Access WELL resources</b></a>
+                                <div class="col-md-6" style="padding-right: 100px">
+                                    <h2 style="text-align: left">Make health a priority</h2> 
+                                    <p style="text-align: left; padding-top: 20px">The WELL Building Standard is the leading tool for advancing health & well-being in buildings and communities globally. </p>
+
+                                    <a href="#" style="padding-top: 20px; color: black; display: block"><b>Access WELL resources</b></a>
+                                </div>
+
+                            </div>
                         </div>
-
-                    </div>
-
                 </div>
 
-            </div>
         </div>
-    </div>
+        </section>
+
+
+            <!-- ===================================== TWO ===================================== -->
+        <section id="two" class="segments" style="height: 100vh">
+
+        <div class="block">
+
+        <div class="col-md-12";>
+                    <div class="col-md-10 col-md-offset-1">
+                            <div class="row";>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6" style="padding-right: 100px">
+                                    <h2 style="text-align: left">Put people first</h2> 
+                                    <p style="text-align: left; padding-top: 20px">Since we spend 90% of our time indoors, the buildings where we live, work, learn and relax have a profound effect on our well-being: how we feel, what we eat and even how we sleep at night.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+        </div>
+
+        </section>
+
+        <!-- ===================================== THREE ===================================== -->
+        <section id="three" class="segments" style="height: 100vh">
+
+        <div class="block">
+             <div class="col-md-12";>
+                    <div class="col-md-10 col-md-offset-1">
+                            <div class="row";>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6" style="padding-right: 100px">
+                                    <h2 style="text-align: left">Create better buildings</h2> 
+                                    <p style="text-align: left; padding-top: 20px">XXXXXXX</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="style/js/plugins/jquery.backgroundSize.js"></script>
+    <script src="style/js/plugins/jquery.carousel.js"></script>
+    <script src="style/js/plugins/jquery.scrolljack.js"></script>
+    <script src="style/js/script.js"></script>
+
+</div>
 
     
 
 <!-- "H" module -->
 
 
+<div id="wrapper">
 
+  <ul id="jumpMenu" style="display: none">
+        <li><a href="#one" class="active"></a></li>
+        <li><a href="#two"></a></li>
+        <li><a href="#three"></a></li>
+    </ul>
 
 
 
@@ -226,8 +281,6 @@
             </div>
 
 
-
-  
 
 
 </div>
@@ -467,6 +520,10 @@
             </div>
 
 </div>
+</div>
+
+
+</section>
 
 
 
@@ -593,6 +650,7 @@
 
 </div>
 </div>
+
 
 
           

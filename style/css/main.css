@@ -9409,6 +9409,114 @@ li {
   color: #FFFFFF;
 }
 
+ul {
+  list-style: none;
+}
+
+nav, footer {
+  overflow: hidden;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+footer h2 {
+  padding: 40px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#one {
+  background-color: xred;
+}
+
+#two {
+  background-color: xgreen;
+}
+
+#three {
+  background-color: xyellow;
+}
+
+/* ============================= Form ============================= */
+ul.ulForm {
+  padding: 0;
+}
+
+ul.ulForm li {
+  padding: 15px;
+}
+
+ul.ulForm label {
+  display: block;
+  width: 100px;
+  float: left;
+  position: relative;
+  top: 5px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* ============================= Vertical Align ============================= */
+.block {
+  height: 100%;
+  margin: 0 auto;
+  transition: height 0.9s ease-in-out;
+}
+
+.block:before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -0.3em;
+}
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1024px;
+  margin: 0 auto;
+}
+
+/* ============================= Jump Menu ============================= */
+#jumpMenu {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  bottom: 0px;
+  width: 86px;
+  z-index: 999;
+}
+
+#jumpMenu ul {
+  position: fixed;
+}
+
+#jumpMenu li a {
+  display: block;
+  border: 1px solid #000;
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  top: 50%;
+  display: block;
+}
+
+#jumpMenu li.active a {
+  background-color: transparent;
+}
+
 a {
   font-family: "filson-soft", Helvetica, sans-serif;
   font-size: 16px;
