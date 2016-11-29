@@ -10,6 +10,7 @@
   margin-bottom: 20px;
   position: relative;
   z-index: 1; 
+  max-height: 450px;
 
 }
 
@@ -45,7 +46,7 @@
 .card-image .content {
   min-height: 179px;
   background-color: white; 
-  padding: 20px
+  padding: 20px 0 0 20px;
 }
 
 .card-image .content .tag {
@@ -54,6 +55,7 @@
   margin-top: 0px;
   font-size: .8em;
   font-weight: 700;
+  padding: 20 0 20 0;
 
   @include media (">=tablet") {
     font-size: 1em;
