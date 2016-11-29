@@ -20,20 +20,14 @@ body {
   display: inline-block;
 }
 .paneOne .content-container{
-  background: rgba(220,36,36,1);
-  background: -moz-linear-gradient(-45deg, rgba(220,36,36,1) 0%, rgba(53,0,96,1) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(220,36,36,1)), color-stop(100%, rgba(53,0,96,1)));
-  background: -webkit-linear-gradient(-45deg, rgba(220,36,36,1) 0%, rgba(53,0,96,1) 100%);
-  background: -o-linear-gradient(-45deg, rgba(220,36,36,1) 0%, rgba(53,0,96,1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(220,36,36,1) 0%, rgba(53,0,96,1) 100%);
-  background: linear-gradient(135deg, rgba(220,36,36,1) 0%, rgba(53,0,96,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc2424', endColorstr='#350060', GradientType=1 );
+  background-color: #E6E4E5;
+
 }
 .paneTwo .content-container{
-  background:#000000;
+  background-color: #E6E4E5;
 }
 .paneThree .content-container{
-  background:#f4f2ef;
+  background-color: #E6E4E5;
 }
 .paneFour .content-container{
   background: rgba(220,36,36,1);
