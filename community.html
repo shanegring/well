@@ -51,38 +51,36 @@
 
     
 
-    <nav class="navbar">
+    <body class="cbp-spmenu-push" style="margin: 0;">
 
-              <div class="container" style="padding-top: 10px">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a href="index.ht"><img class="img-responsive" src="../well/style/assets/logo/IWBI-Black_TM.png" style="max-width: 170px; margin-top:20px" /></a>
-                </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="standard.html" style="color: black">Our Standard</a></li>
-                    <li><a href="community.html" style="color: black">Your Community</a></li>
-                  </ul>
 
-                
 
-                    <ul class="nav navbar-nav pull-right">
+<!-- Navigation -->
 
-                    <li>
-                        <div class="btn-group show-on-hover pull-right">
-                          <button type="button" class="dropdown-toggle" data-toggle="dropdown" style="padding: 15px; border: 0px solid black; background-color: transparent; color: black">
-                            Region <span class="caret" style="color:black"></span>
-                          </button>
+
+ <nav class="menu menu--prospero" style="padding: 20px 50px 0 50px; width: 100%; background-color: black; height: 125px; position: fixed" id="navbar">
+
+        <div class="brand">
+        <a href="#"><img class="img-responsive menu__item--current brand" src="style/assets/logo/IWBI_Logo_whitesolid_TM.png" /></a>
+        </div>
+
+        <span style="float: left">
+          <ul class="menu__list" style="float: left">
+            <li class="menu__item"><a href="standard.html" class="menu__link"">Our Standard</a></li>
+            <li class="menu__item"><a href="community.html" class="menu__link">Your Community</a></li>
+          </ul>
+        </span>
+
+        <span>
+          <ul class="menu__list" style="float: right">
+            <li class="menu__item">
+              <div class="show-on-hover">
+                          <div type="button" class="dropdown-toggle menu__link" data-toggle="dropdown">
+                            Region <span class="menu-caret" style="color:white;"></span>
+                          </div>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">North America</a></li>
+                            <li><a href="standard.html">North America</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Middle East</a></li>
                             <li class="divider"></li>
@@ -93,22 +91,35 @@
                             <li><a href="#">India</a></li>
                           </ul>
                         </div>
-                    </li>
-                    <li class="active"><a href="#" style="color: black;">Sign-in<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#" style="color: black; border: 1px solid black">Log-in</a></li>
-                  </ul>
+
+            </li>
+            <li class="menu__item"><a href="standard.html" class="menu__link">Log-in</a></li>
+            <li class="menu__item"><a href="standard.html" class="menu__box">Sign-Up</a></li>
+            <li class="menu__item">
+                <div type="button" class="menu__mobile" id="showRightPush">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </div>
+            </li>
+          </ul>
+        </span>
+
+        </nav>
 
 
-
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
+<div class="cbp-spmenu-push">
         
-    </nav>
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+            <a href="#">Home</a>
+            <a href="standard.html">Our Standard</a>
+            <a href="community.html">Your Community</a>
+            <a href="#">About</a>
+            <a href="#">Log-in</a>
+            <a href="#">Sign-up</a>
+        </nav>
 
-
-
-<!-- Body -->
-    <body>
+</div>
 
 
 

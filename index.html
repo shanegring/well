@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html class="no-js" lang="">
+<html class="" lang="">
     <head>
         
         <meta charset="utf-8">
@@ -12,6 +12,10 @@
 
         <script src="style/js/bootstrap/bootstrap.js"></script>
         <script type="text/javascript" src="style/js/flickity/flickity.pkgd.min.js"></script>
+
+        <script type="text/javascript" src="style/js/navigation/classie.js"></script>
+        <script type="text/javascript" src="style/js/navigation/clipboard.min.js"></script>
+        <script type="text/javascript" src="style/js/navigation/modernizr.custom.js"></script>
 
         <script src="https://use.typekit.net/rrc8neo.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -32,51 +36,41 @@
     background-size: 10px 10px;
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
-    text-decoration: none;
-    background-color: transparent;
-    color: blue;
-}
 
 
     </style>
     
+<!-- Body -->
+    <body class="cbp-spmenu-push" style="margin: 0;">
+
+
+
 
 <!-- Navigation -->
 
-    
-<div data-spy="affix" data-offset-top="121">
-    <nav class="navbar">
-              <div class="container" style="padding-top: 10px">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a href="#"><img class="img-responsive" src="../well/style/assets/logo/IWBI_Logo_whitesolid_TM.png" style="max-width: 170px; margin-top: -20px" /></a>
-                </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="standard.html" style="color: white">Our Standard</a></li>
-                    <li><a href="community.html" style="color: white">Your Community</a></li>
-                  </ul>
+ <nav class="menu menu--prospero" style="padding: 20px 50px 0 50px; width: 100%" id="navbar">
 
-                
+        <div class="brand">
+        <a href="#"><img class="img-responsive menu__item--current brand" src="style/assets/logo/IWBI_Logo_whitesolid_TM.png" /></a>
+        </div>
 
-                    <ul class="nav navbar-nav pull-right">
+        <span style="float: left">
+          <ul class="menu__list" style="float: left">
+            <li class="menu__item"><a href="standard.html" class="menu__link"">Our Standard</a></li>
+            <li class="menu__item"><a href="community.html" class="menu__link">Your Community</a></li>
+          </ul>
+        </span>
 
-                    <li>
-                        <div class="btn-group show-on-hover pull-right">
-                          <button type="button" class="dropdown-toggle" data-toggle="dropdown" style="padding: 15px; border: 0px solid white; background-color: transparent; color: white;">
-                            Region <span class="caret" style="color:white"></span>
-                          </button>
+        <span>
+          <ul class="menu__list" style="float: right">
+            <li class="menu__item">
+              <div class="show-on-hover">
+                          <div type="button" class="dropdown-toggle menu__link" data-toggle="dropdown">
+                            Region <span class="menu-caret" style="color:white;"></span>
+                          </div>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">North America</a></li>
+                            <li><a href="standard.html">North America</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Middle East</a></li>
                             <li class="divider"></li>
@@ -87,34 +81,46 @@
                             <li><a href="#">India</a></li>
                           </ul>
                         </div>
-                    </li>
-                    <li class="active"><a href="#" style="color: white;">Sign-in<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#" style="color: white; border: 1px solid white">Log-in</a></li>
-                    <li><a href="alton.html" style="color: white; border: 1px solid white">Alton Example</a></li>
-                  </ul>
-                  </ul>
+
+            </li>
+            <li class="menu__item"><a href="standard.html" class="menu__link">Log-in</a></li>
+            <li class="menu__item"><a href="standard.html" class="menu__box">Sign-Up</a></li>
+            <li class="menu__item">
+                <div type="button" class="menu__mobile" id="showRightPush">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </div>
+            </li>
+          </ul>
+        </span>
+
+        </nav>
+
+
+<div class="cbp-spmenu-push">
+        
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+            <a href="#">Home</a>
+            <a href="standard.html">Our Standard</a>
+            <a href="community.html">Your Community</a>
+            <a href="#">About</a>
+            <a href="#">Log-in</a>
+            <a href="#">Sign-up</a>
+        </nav>
+
+</div>
 
 
 
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
-    </nav>
- </DIV>
-
-
-
-
-<!-- Body -->
-    <body>
-
-
+   
 
 
 
 <!-- "A" module -->
 
 
-    <div class="col-md-12" style="margin-top: -100px;">
+    <div class="col-md-12" style="margin-top: -250px">
         <div class="row">
             
             <div class="hero-image">
@@ -167,7 +173,7 @@
                         <div class="container">
 
                             <div class="box">
-                                <h2>BETTER BUILDINGS ARE WELL</h2>
+                                <h2 style="text-align: left">BETTER BUILDINGS ARE WELL</h2>
                                 <div class="b-line"></div>
                                 <p>The way that buildings are designed, constructed and maintained impacts the way we sleep, what we eat, and how we feel. The WELL Building Standard uses innovative, research-backed strategies to advance health, happiness and mindfulness in our buildings and communities.</p>
                             </div>
@@ -502,4 +508,70 @@
     })
   });
 </script>
+
+ <script src="js/classie.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script>
+    (function() {
+      [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+        var menuItems = menu.querySelectorAll('.menu__link'),
+          setCurrent = function(ev) {
+            ev.preventDefault();
+
+            var item = ev.target.parentNode; // li
+
+            // return if already current
+            if (classie.has(item, 'menu__item--current')) {
+              return false;
+            }
+            // remove current
+            classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+            // set current
+            classie.add(item, 'menu__item--current');
+          };
+
+        [].slice.call(menuItems).forEach(function(el) {
+          el.addEventListener('click', setCurrent);
+        });
+      });
+
+      [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+        link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+        new Clipboard(link);
+        link.addEventListener('click', function() {
+          classie.add(link, 'link-copy--animate');
+          setTimeout(function() {
+            classie.remove(link, 'link-copy--animate');
+          }, 300);
+        });
+      });
+    })(window);
+    </script>
+
+
+
+<!-- Mobile Slide Bar -->
+
+
+    <script>
+            var 
+                menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+                
+                
+                showRight = document.getElementById( 'showRight' ),
+                
+                
+                showRightPush = document.getElementById( 'showRightPush' ),
+                body = document.body;
+
+            
+            showRightPush.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( body, 'cbp-spmenu-push-toleft' );
+                classie.toggle( menuRight, 'cbp-spmenu-open' );
+                disableOther( 'showRightPush' );
+            };
+
+        
+        </script>
 

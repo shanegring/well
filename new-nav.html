@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://demo.paper-leaf.com/alton/bookend/ -->
+<html lang="en" class="wf-brandongrotesque-n7-active wf-freighttextpro-n4-active wf-brandongrotesque-n4-active wf-brandongrotesque-i4-active wf-brandongrotesque-i7-active wf-freighttextpro-i4-active wf-freighttextpro-n7-active wf-freighttextpro-i7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="Author" content="Paper Leaf Design | www.paper-leaf.com">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Navigation</title>
+
+      
+        <link rel="stylesheet" type="text/css" href="style/css/main.css" />
+
+        <script type="text/javascript" src="style/js/navigation/classie.js"></script>
+        <script type="text/javascript" src="style/js/navigation/clipboard.min.js"></script>
+
+        <script type="text/javascript" src="style/js/navigation/modernizr.custom.js"></script>
+
+        <script src="style/js/bootstrap/bootstrap.js"></script>
+
+        <script src="style/js/collapse-bar.js"></script>
+
+          <script src="https://use.typekit.net/rrc8neo.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        
+    
+    
+    </head>
+
+
+    <style>
+
+
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+
+
+.hero-image {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('style/assets/img/office-www-2.jpg') no-repeat center center; 
+height: 80vh; 
+background-size: cover; 
+margin-top: -75px;
+
+
+
+
+
+
+
+
+        </style>
+
+
+
+
+
+     <body style="background-color: #53565B; max-width: 1800px">
+
+          
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#" data-value="action">Action</a></li>
+                <li><a href="#" data-value="another action">Another action</a></li>
+                <li><a href="#" data-value="something else here">Something else here</a></li>
+                <li><a href="#" data-value="separated link">Separated link</a></li>
+              </ul>
+            </div>
+
+                <script>
+                      $(".dropdown-menu li a").click(function(){
+                        $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+                        $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+                      });
+                </script>
+        
+
+
+      <section class="section section--menu hero-image" id="Prospero">
+
+      
+  
+        <div class="menu menu--prospero" style="padding: 20px 50px 0 50px; width: 100%">
+
+        <a href="#"><img class="img-responsive" src="../well/style/assets/logo/IWBI_Logo_whitesolid_TM.png" style="max-width: 170px; float: left; margin-top: -20px" /></a>
+              
+        <span style="float: left">
+          <ul id="slide-out" class="menu__list side-nav" style="float: left">
+            <li class="menu__item menu__item--current"><a href="#" class="menu__link pull-left">Our Standard</a></li>
+            <li class="menu__item"><a href="#" class="menu__link pull-left">Your Community</a></li>
+          </ul>
+        </span>
+
+        <span>
+          <ul class="menu__list" style="float: right">
+            <li class="menu__item">
+              <div class="show-on-hover">
+                          <div type="button" class="dropdown-toggle menu__link" data-toggle="dropdown">
+                            Region <span class="menu-caret" style="color:white;"></span>
+                          </div>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">North America</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Middle East</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Europe</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">China</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">India</a></li>
+                          </ul>
+                        </div>
+
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Log-in</a></li>
+            <li class="menu__item"><a href="#" class="menu__box">Sign-Up</a></li>
+          </ul>
+        </span>
+
+
+
+        </div>
+
+
+      </section>
+
+
+
+      <section class="section section--menu" id="Prospero" style="background-color: white";>
+  
+        <div class="menu menu--prospero" style="padding: 20px 50px 0 50px; width: 100%; margin-top: 500px; background-color: black">
+
+        <a href="#"><img class="img-responsive" src="../well/style/assets/logo/IWBI_Logo_whitesolid_TM.png" style="max-width: 170px; float: left; margin-top: -20px" /></a>
+
+        <span>
+          <ul class="menu__list" style="float: right">
+            <li class="menu__item"><a href="#" class="menu__box">Register Your Project</a></li>
+          </ul>
+        </span>
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- /container -->
+    <script src="js/classie.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script>
+    (function() {
+      [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+        var menuItems = menu.querySelectorAll('.menu__link'),
+          setCurrent = function(ev) {
+            ev.preventDefault();
+
+            var item = ev.target.parentNode; // li
+
+            // return if already current
+            if (classie.has(item, 'menu__item--current')) {
+              return false;
+            }
+            // remove current
+            classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+            // set current
+            classie.add(item, 'menu__item--current');
+          };
+
+        [].slice.call(menuItems).forEach(function(el) {
+          el.addEventListener('click', setCurrent);
+        });
+      });
+
+      [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+        link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+        new Clipboard(link);
+        link.addEventListener('click', function() {
+          classie.add(link, 'link-copy--animate');
+          setTimeout(function() {
+            classie.remove(link, 'link-copy--animate');
+          }, 300);
+        });
+      });
+    })(window);
+    </script>
+
+
+
+  </body>
+
+
+
+</html>

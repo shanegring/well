@@ -1,0 +1,278 @@
+/* Common styles for all menus */
+
+
+.brand img {
+    max-width: 170px; 
+    float: left; 
+    margin-top: -20px;
+    margin-left: -50px;
+
+    @include media (">=tablet") {
+     display: block;
+     margin-left: 0px;
+    }
+}
+
+
+
+
+
+#navbar{
+ position:relative;
+ height:300px;
+}
+
+
+.menu {
+    line-height: 1;
+    top: 0;
+    z-index: 999;
+}
+
+.menu__list {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+
+.menu__item {
+    display: block;
+    margin: 1em 0;
+}
+
+.menu__link {
+    font-family: "filson-soft", Helvetica, sans-serif;
+    font-size: 1.05em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+
+.menu__link:hover,
+.menu__link:focus {
+    outline: none;
+}
+
+.menu-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 6px dashed;
+  border-top: 6px solid white;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+
+/* Individual styles */
+
+
+/* Prospero */
+.menu__link {
+    position: relative;
+    display: none;
+    margin: 0 1.5em;
+    padding: 0.75em 0;
+    text-align: center;
+    color: white;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+
+    @include media (">=tablet") {
+     display: inline-block;
+    }
+}
+
+.menu__box {
+    font-size: 1.05em;
+    color: white;
+    font-weight: bold;
+    display: none;
+    padding: 1em;
+    border: 2px solid  white;
+    margin-top: -10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    @include media (">=tablet") {
+     display: block;
+    }
+}
+
+
+.menu--prospero .menu__link:hover,
+.menu--prospero .menu__link:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.menu--prospero .menu__link .menu-caret:hover,
+.menu--prospero .menu__link .menu-caret:focus {
+    border-top-color: white;
+    text-decoration: none;
+}
+
+
+.menu--prospero .menu__item--current .menu__link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu--prospero .menu__box:hover,
+.menu--prospero .menu__box:focus {
+    color: #11709f;
+    background-color: white;
+    text-decoration: none;
+}
+
+
+.menu--prospero .menu__item--current .menu-caret {
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu--prospero .menu__link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    text-decoration: none;
+}
+
+.menu--prospero .menu__item--current .menu__link::before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.menu--prospero .menu__item--current .menu__link::after {
+    color: $aqua-blue;
+}
+
+
+
+
+/* Dropdown Menu */
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 10px 0;
+  margin: 10px 0 0;
+  font-family: "filson-soft", Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: white;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  text-decoration: none;
+}
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  color: blue;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  display: block; 
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+  text-decoration: none;
+}
+
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777;
+  text-decoration: none;
+}
+
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+

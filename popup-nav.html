@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://demo.paper-leaf.com/alton/bookend/ -->
+<html lang="en" class="wf-brandongrotesque-n7-active wf-freighttextpro-n4-active wf-brandongrotesque-n4-active wf-brandongrotesque-i4-active wf-brandongrotesque-i7-active wf-freighttextpro-i4-active wf-freighttextpro-n7-active wf-freighttextpro-i7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="Author" content="Paper Leaf Design | www.paper-leaf.com">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Navigation</title>
+
+      
+        <link rel="stylesheet" type="text/css" href="style/css/main.css" />
+
+        <script type="text/javascript" src="style/js/navigation/classie.js"></script>
+        <script type="text/javascript" src="style/js/navigation/clipboard.min.js"></script>
+
+        <script type="text/javascript" src="style/jquery/dist/jquery.js"></script>
+
+        <script src="style/js/bootstrap/bootstrap.js"></script>
+
+        <script src="style/js/collapse-bar.js"></script>
+
+          <script src="https://use.typekit.net/rrc8neo.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        
+    
+    
+    </head>
+
+
+    <style>
+
+
+.nav {
+    background-color:white;
+    color:#fff;
+    transition: all 0.25s ease;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#ccc;
+    padding:1em 0;
+    /* make sure to add vendor prefixes here */
+}
+
+.nav.past-main {
+    background-color:#fff;
+    color:#444;
+}
+
+#main {
+  height:500px;
+  background-color:red;
+}
+
+#below-main {
+  height:1000px;
+  background-color:#eee;
+}
+
+
+
+  </style>
+
+
+
+
+
+     <body style="background-color: #53565B; max-width: 1800px">
+
+          
+           <nav class="nav">
+              <a href="#" class="logo">[lo</a>
+            </nav>
+            <div id="main">#main</div>
+            <div id="below-main">#below-main</div> 
+
+
+
+
+
+  </body>
+</html>
+
+<script>
+// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+var mainbottom = $('#main').offset().top + $('#main').height();
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > mainbottom) {
+        $('.nav').addClass('past-main');
+    } else {
+        $('.nav').removeClass('past-main');
+   }
+
+});
+</script>
