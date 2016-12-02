@@ -31,45 +31,6 @@
     <style>
 
 
-.nav {
-    background-color: white;
-    color:#fff;
-    transition: all 0.25s ease;
-    position:fixed;
-    top:0;
-    width:100%;
-    background-color:#ccc;
-    padding:1em 0;
-    height: 125px;
-    z-index: 999;
-    display: block;
-    /* make sure to add vendor prefixes here */
-}
-
-
-
-.nav.past-main {
-    display: none;
-}
-
-
-.nav-2.past-main {
-    display: block;
-}
-
-.nav.menu__list.past-main a{
-    color:blue;
-}
-
-#main {
-  height:500px;
-  background-color:red;
-}
-
-#below-main {
-  height:1000px;
-  background-color:#eee;
-}
 
 
 body {
@@ -77,27 +38,24 @@ body {
 }
 
 header {
-    background: #f5b335;
-    height: 40px;
-    position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
 }
 
 .nav-up {
-    top: -40px;
+    top: -125px;
 }
 
 main {
+    transition: top 0.5s ease-in-out;
    background:url(
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPklEQVQYV2O8dOnSfwYg0NPTYwTRuAAj0QqxmYBNM1briFaIzRbi3UiRZ75uNgUHGbfvabgfsHqGaIXYPAMAD8wgC/DOrZ4AAAAASUVORK5CYII=
    ) repeat;
     height: 2000px;
 }
 
-footer { background: #ddd;}
-* { color: transparent}
+
 
   </style>
 
@@ -105,12 +63,9 @@ footer { background: #ddd;}
 
 
 
-     <body style="background-color: #53565B; max-width: 1800px">
-
 <header class="nav-down">
-          
-           <nav class="nav" style="z-index: 999">
-                          <div class="menu menu--prospero" style="background-color: black; padding: 20px 50px 0 50px; width: 100%; height: 125px; position: fixed" id="navbar">
+            <nav class="nav" style="z-index: 2">
+                          <div class="menu menu--prospero" style="background-color: black; padding: 20px 50px 0 50px; width: 100%; height: 125px; position:absolute;" id="navbar">
 
                     <div class="brand">
                     <a href="#"><img class="img-responsive menu__item--current brand" src="style/assets/logo/IWBI_Logo_whitesolid_TM.png" /></a>
@@ -158,20 +113,18 @@ footer { background: #ddd;}
 
                     </div>
             </nav>
+</header>
 
-            <nav class="nav-2">
-                    <div class="menu menu--prospero" style="padding: 20px 50px 0 50px; width: 100%; height: 125px; position: fixed" id="navbar">
+
+
+
+<main>
+ <div class="nav-2">
+                    <div class="menu menu--prospero" style="padding: 20px 50px 0 50px; width: 100%; height: 125px; position: fixed; z-index: 1; background-color: black" id="navbar">
 
                     <div class="brand">
                     <a href="#"><img class="img-responsive menu__item--current brand" src="style/assets/logo/IWBI_Logo_whitesolid_TM.png" /></a>
                     </div>
-
-                    <span style="float: left">
-                      <ul class="menu__list" style="float: left">
-                        <li class="menu__item"><a href="standard.html" class="menu__link"">Our Standard</a></li>
-                        <li class="menu__item"><a href="community.html" class="menu__link">Your Community</a></li>
-                      </ul>
-                    </span>
 
                     <span>
                       <ul class="menu__list" style="float: right">
@@ -180,43 +133,28 @@ footer { background: #ddd;}
                     </span>
 
                     </div>
-            </nav>
-
-</header>
-
-
-
-            <div id="main">#main</div>
-            <div id="below-main">#below-main</div> 
+            </div>
+   
+</main>
+<footer>
+    This is your footer.
+</footer>
 
 
 
 
 
-  </body>
-</html>
 
-<script>
-// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-var mainbottom = $('#main').offset().top + $('#main').height();
 
-// on scroll, 
-$(window).on('scroll',function(){
 
-    // we round here to reduce a little workload
-    stop = Math.round($(window).scrollTop());
-    if (stop > mainbottom) {
-        $('.nav').addClass('past-main');
-        $('.nav').addClass('past-main');
-    } else {
-        $('.nav').removeClass('past-main');
-   }
 
-});
-</script>
+
+
+
+
+
 
 <script>
-// Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -255,3 +193,4 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 </script>
+
