@@ -2,12 +2,16 @@
 // MODULE D
 // Articles Module 
 
+.module-d {
 
-.d-background {
-background-color:  #e7e6e6;
-padding-top: 60px; 
-padding-bottom: 60px;
+  background-color: #EEEEEE; 
+  padding: 0px 0px 0px 0px;
+
+   @include media (">=tablet") {
+    padding: 50px 100px 0 100px;
+  }
 }
+
 
 
 .d-parent {

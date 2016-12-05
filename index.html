@@ -19,7 +19,6 @@
 
         <script src="https://use.typekit.net/rrc8neo.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    
 
 
     </head>
@@ -41,7 +40,7 @@
     </style>
     
 <!-- Body -->
-    <body class="cbp-spmenu-push" style="margin: 0;">
+    <body class="cbp-spmenu-push">
 
 
 
@@ -49,7 +48,8 @@
 <!-- Navigation -->
 
 
- <nav class="menu menu--prospero" style="padding: 20px 50px 0 50px; width: 100%" id="navbar">
+ <nav class="menu menu--prospero" id="navbar">
+    <div class="row">
 
         <div class="brand">
         <a href="#"><img class="img-responsive menu__item--current brand" src="style/assets/logo/IWBI_Logo_whitesolid_TM.png" /></a>
@@ -66,8 +66,7 @@
           <ul class="menu__list" style="float: right">
             <li class="menu__item">
               <div class="show-on-hover">
-                          <div type="button" class="dropdown-toggle menu__link" data-toggle="dropdown">
-                            Region <span class="menu-caret" style="color:white;"></span>
+                          <div type="button" class="dropdown-toggle menu__link" data-toggle="dropdown">Region <span class="menu-caret"></span>
                           </div>
                           <ul class="dropdown-menu" role="menu">
                             <li><a href="standard.html">North America</a></li>
@@ -94,8 +93,8 @@
             </li>
           </ul>
         </span>
-
-        </nav>
+    </div>
+</nav>
 
 
 <div class="cbp-spmenu-push">
@@ -120,22 +119,18 @@
 <!-- "A" module -->
 
 
-    <div class="col-md-12" style="margin-top: -250px">
+    <div class="col-md-12 module-a">
         <div class="row">
             
             <div class="hero-image">
-
-
                 <div class="col-md-6 col-md-offset-3">
-            
                     <div class="hero-text">
-                    <h1>HEALTHY PLACES TO WORK</h1> 
+                        <h1>HEALTHY PLACES TO WORK</h1> 
                     </div>
 
                     <div class="hero-button">
-                    <button class="primary-button">Get started</button>
+                        <button class="primary-button">Get started</button>
                     </div>
-
                 </div>
 
                 <div class="container">
@@ -143,7 +138,7 @@
                 </div>
 
 
-                <a href="#b-module">
+                <a href="#module-b">
                 <div class="demo">
                     <div class="container2">
                         <div class="triangle2"></div>
@@ -161,12 +156,13 @@
 
 <!-- "B" module -->
 
-<div class="col-md-12" style="padding-right: 0px; padding-left: 0px;" id="b-module";>
+<div class="col-md-12 module-b">
+    <div class="row">
 
             
         <div class="b-parent">
 
-             <div class="child col-md-6 col-xs-12">
+             <div class="child col-md-6 col-xs-12" style="padding-right: 0px; padding-left: 0px">
 
                     <div class="row new-left big-corner-triangle">
 
@@ -183,7 +179,7 @@
         
 
           
-              <div class="child col-md-6 col-xs-12">
+              <div class="child col-md-6 col-xs-12" style="padding-right: 0px; padding-left: 0px ">
 
                     <div class="row new-right stripe" style="padding-bottom: 11.5%";">
                        
@@ -219,6 +215,7 @@
                 </div>
             </div>
         </div>
+    </div>
  
  
 
@@ -230,44 +227,26 @@
 <!-- "C" module -->
 
 
-<div class="col-md-6 col-md-offset-3" style="min-height: 500px; padding-top: 75px; padding-bottom: 75px";>
-    <div class="row" style="max-width: 1100px; margin: auto;">
+<div class="col-md-6 col-md-offset-3 module-c">
+   
+        <div class="row">
 
-         <div class="c-text-new">
-            <img src="../well/style/assets/img/qoute.jpeg" style="max-width: 75px">
-        </div>
-
-        <div class="c-text-new">
+            <img src="../well/style/assets/img/qoute.jpeg">
+    
             <h4>Nothing is as meaningful as hearing directly from our employees that they are happier and more productive than they were before - that they feel healthier.</h4>
-        </div>
-
-        <div class="col-md-2 col-md-offset-5 col-xs-4 col-xs-offset-4">
-
-        <div class="c-line"></div>
-
-        </div>
-
-            <div class="col-md-12">
-                <div class="c-user row">
+      
               
-                    <div class="col-md-2 col-xs-12">
-                        <img class="c-image img-circle img-responsive" src="../well/style/assets/img/prateek.jpeg" style="width: 75px; height:75px; display: inline-block;">    
-                    </div>
-
-                    <div class="col-md-10 col-xs-12">
-                        <div class="c-title" style="text-align: left">
-                            <h6 class="name">Lewis C. Horne</h6>
-                            <h6 class="title">President of the Southern California Region for CBRE</h6>
-                        </div>
-                    </div>
-
+            <div class="user">
+                <img class="img-circle img-responsive pull-left" src="../well/style/assets/img/prateek.jpeg">    
+                    <div class="new-name">Lewis C. Horne</div>
+                    <div class="new-title">President of the Southern California Region for CBRE</div>
                 </div>
             </div>
-
-    
-    </div>
+         
+        </div>
 </div>
 
+    
 
 
     
@@ -275,7 +254,8 @@
 
 <!-- "D" module -->
 
-    <div class="col-md-12 new-article">
+<div class="col-md-12 module-d">
+<div class="row">
 
 
 <div class="carousel" data-flickity='{ "wrapAround": true }'>
@@ -292,8 +272,7 @@
                                 <h3 class="description">Top 10 office health tips</h3>
                             </div>
                         </div> 
-                    </a>
-         
+                    </a>    
           </div>
 
           <div class="carousel-cell">
@@ -313,11 +292,9 @@
                             </div>
                         </div> 
                   </a>
-           
-
           </div>
-          <div class="carousel-cell">
 
+          <div class="carousel-cell">
           <a href="">
                    <div class="card card-image card-w-image">
                             <div class="image">
@@ -330,11 +307,9 @@
                             </div>
                         </div> 
                       </a>
-            
-
           </div>
+
           <div class="carousel-cell">
-            
             <a href="">
                         <div class="card card-image card-w-image">
                             <div class="image">
@@ -348,6 +323,8 @@
                         </div> 
                     </a>
           </div>
+
+
           <div class="carousel-cell">
               <a href="">
                    <div class="card card-image card-w-image">
@@ -362,8 +339,10 @@
                         </div> 
                       </a>
           </div>
+
         </div>
     </div>
+</div>
 </div>
 
 

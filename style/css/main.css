@@ -8507,6 +8507,17 @@ http://flickity.metafizzy.co
   opacity: 1;
 }
 
+@media (min-width: 1280px) {
+  .row {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
+
+.module-a {
+  margin-top: -250px;
+}
+
 .hero-text {
   text-align: center;
   padding-top: 200px;
@@ -8540,12 +8551,18 @@ http://flickity.metafizzy.co
   height: 80vh;
   background-size: cover;
   margin-top: -75px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .hero-image {
     height: 99vh;
   }
+}
+
+.module-b {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .new-left {
@@ -8651,55 +8668,42 @@ http://flickity.metafizzy.co
   }
 }
 
-.c-text-new {
+.module-c {
+  padding-top: 75px;
+  padding-bottom: 75px;
   text-align: center;
   text-transform: none;
 }
 
-.c-title {
-  display: inline-block;
-  text-align: left;
+.module-c img {
+  max-width: 75px;
 }
 
-.c-user {
-  text-align: center;
+.module-c .standard-quote {
+  background-color: #E6E4E5;
 }
 
-@media (min-width: 768px) {
-  .c-user {
-    text-align: left;
-    margin-top: 30px;
-  }
+.module-c .user {
+  margin-top: 50px;
+  justify-content: center;
 }
 
-.c-image img {
+.module-c .user img {
   max-width: 75px;
   max-height: 75px;
-  display: inline-block;
-  margin-top: 20px;
+  display: block;
+  margin: 20px;
 }
 
 @media (min-width: 768px) {
-  .c-image img {
+  .module-c .user img {
     margin-top: 0px;
+    display: inline-block;
+    margin-right: 20px;
   }
 }
 
-.c-line {
-  width: 50px;
-  border-top: 3px solid black;
-  height: 1px;
-  margin-bottom: 50px;
-}
-
-@media (min-width: 768px) {
-  .c-line {
-    margin-bottom: 0px;
-    margin-top: 40px;
-  }
-}
-
-.c-user .c-title .name {
+.module-c .user .new-name {
   color: #53565a;
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -8709,16 +8713,16 @@ http://flickity.metafizzy.co
   text-align: center;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-left: 15px;
 }
 
 @media (min-width: 768px) {
-  .c-user .c-title .name {
+  .module-c .user .new-name {
     text-align: left;
-    margin-top: 0px;
   }
 }
 
-.c-user .c-title .title {
+.module-c .user .new-title {
   color: #43b1bc;
   text-transform: uppercase;
   font-size: 1em;
@@ -8728,23 +8732,25 @@ http://flickity.metafizzy.co
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 1.4;
+  margin-left: 15px;
 }
 
 @media (min-width: 768px) {
-  .c-user .c-title .title {
+  .module-c .user .new-title {
     text-align: left;
     margin-top: 0px;
   }
 }
 
-.standard-quote {
-  background-color: #E6E4E5;
+.module-d {
+  background-color: #EEEEEE;
+  padding: 0px 0px 0px 0px;
 }
 
-.d-background {
-  background-color: #e7e6e6;
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media (min-width: 768px) {
+  .module-d {
+    padding: 50px 100px 0 100px;
+  }
 }
 
 .d-parent {
@@ -9666,6 +9672,11 @@ ul.ulForm label {
   z-index: 999;
 }
 
+.menu--prospero {
+  padding: 20px 50px 0 50px;
+  width: 100%;
+}
+
 .menu__list {
   position: relative;
   display: -webkit-flex;
@@ -9714,6 +9725,7 @@ ul.ulForm label {
   border-top: 6px solid white;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
+  color: white;
 }
 
 /* Individual styles */

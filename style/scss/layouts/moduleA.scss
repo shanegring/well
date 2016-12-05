@@ -3,6 +3,9 @@
 // Classic Header: Image background, with hero text and button
 
 
+.module-a {
+  margin-top: -250px;
+}
 
 .hero-text {
 	text-align: center;
@@ -37,6 +40,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../ass
 height: 80vh; 
 background-size: cover; 
 margin-top: -75px;
+width: 100%;
 
 @include media (">=tablet") {
    height: 99vh;

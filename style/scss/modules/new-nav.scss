@@ -29,6 +29,11 @@
     z-index: 999;
 }
 
+.menu--prospero {
+padding: 20px 50px 0 50px; 
+width: 100%;
+}
+
 .menu__list {
     position: relative;
     display: -webkit-flex;
@@ -81,6 +86,7 @@
   border-top: 6px solid white;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
+  color:white;
 }
 
 
@@ -88,6 +94,12 @@
 
 
 /* Prospero */
+
+
+
+
+
+
 .menu__link {
     position: relative;
     display: none;
