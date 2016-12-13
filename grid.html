@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Thumbnail Grid with Expanding Preview</title>
+		<meta name="description" content="Thumbnail Grid with Expanding Preview" />
+		<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+
+		<link rel="stylesheet" type="text/css" href="style/css/main.css" />
+		<script src="style/js/modernizr.custom.js"></script>
+	</head>
+
+	<style>
+	.container {
+	width: 100%;
+	position: relative;
+}
+
+.container > header {
+	width: 90%;
+	max-width: 1240px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 30px 50px 30px;
+}
+
+.container > header {
+	padding: 60px 30px 50px;
+	text-align: center;
+}
+
+.container > header h1 {
+	font-size: 34px;
+	line-height: 38px;
+	margin: 0 auto;
+	font-weight: 700;
+	color: #333;
+}
+
+.container > header h1 span {
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.main > p {
+	text-align: center;
+	padding: 50px 20px;
+}
+</style>
+	<body>
+		<div class="container">	
+	
+			<div class="main">
+				<ul id="og-grid" class="og-grid">
+					<li>
+						<a href="" data-largesrc="style/assets/img/interior-big.png" data-title="New and Existing Buildings" data-description="This project typology applies to new and existing buildings and addresses the full scope of project design and construction as well as aspects of building operations. It is relevant for office buildings where a minimum of 90% of the total floor area is occupied by the building owner and is operated by the same management.">
+
+
+						<figure class="thumbnail-typology">
+							<img src="style/assets/img/interior-thumb.png" alt="img01" />
+							<figcaption class="thumbnail-typology-text">New and Existing Buildings</figcaption>
+                        </figure>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="style/assets/img/interior-big.png" data-title="New and Existing Interiors" data-description="This project typology applies to new and existing buildings and addresses the full scope of project design and construction as well as aspects of building operations. It is relevant for office buildings where a minimum of 90% of the total floor area is occupied by the building owner and is operated by the same management.">
+
+
+						<figure class="thumbnail-typology">
+							<img src="style/assets/img/interior-thumb.png" alt="img01" />
+							<figcaption class="thumbnail-typology-text">New and Existing Interiors</figcaption>
+                        </figure>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="style/assets/img/interior-big.png" data-title="Core and Shell" data-description="This project typology applies to new and existing buildings and addresses the full scope of project design and construction as well as aspects of building operations. It is relevant for office buildings where a minimum of 90% of the total floor area is occupied by the building owner and is operated by the same management.">
+
+
+						<figure class="thumbnail-typology">
+							<img src="style/assets/img/interior-thumb.png" alt="img01" />
+							<figcaption class="thumbnail-typology-text">Core and Shell</figcaption>
+                        </figure>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="style/assets/img/interior-big.png" data-title="Retail (Pilot)" data-description="This project typology applies to new and existing buildings and addresses the full scope of project design and construction as well as aspects of building operations. It is relevant for office buildings where a minimum of 90% of the total floor area is occupied by the building owner and is operated by the same management.">
+
+
+						<figure class="thumbnail-typology">
+							<img src="style/assets/img/interior-thumb.png" alt="img01" />
+							<figcaption class="thumbnail-typology-text">Retail (PILOT)</figcaption>
+                        </figure>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="style/assets/img/interior-big.png" data-title="Multifamily Residental (Pilot)" data-description="This project typology applies to new and existing buildings and addresses the full scope of project design and construction as well as aspects of building operations. It is relevant for office buildings where a minimum of 90% of the total floor area is occupied by the building owner and is operated by the same management.">
+
+
+						<figure class="thumbnail-typology">
+							<img src="style/assets/img/interior-thumb.png" alt="img01" />
+							<figcaption class="thumbnail-typology-text">Multifamily Residental (PILOT)</figcaption>
+                        </figure>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="style/assets/img/interior-big.png" data-title="Education (Pilot)" data-description="This project typology applies to new and existing buildings and addresses the full scope of project design and construction as well as aspects of building operations. It is relevant for office buildings where a minimum of 90% of the total floor area is occupied by the building owner and is operated by the same management.">
+
+
+						<figure class="thumbnail-typology">
+							<img src="style/assets/img/interior-thumb.png" alt="img01" />
+							<figcaption class="thumbnail-typology-text">Education (PILOT)</figcaption>
+                        </figure>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="style/assets/img/interior-big.png" data-title="Restaurant (Pilot)" data-description="This project typology applies to new and existing buildings and addresses the full scope of project design and construction as well as aspects of building operations. It is relevant for office buildings where a minimum of 90% of the total floor area is occupied by the building owner and is operated by the same management.">
+
+
+						<figure class="thumbnail-typology">
+							<img src="style/assets/img/interior-thumb.png" alt="img01" />
+							<figcaption class="thumbnail-typology-text">Restaurant (Pilot)</figcaption>
+                        </figure>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="style/assets/img/interior-big.png" data-title="Commercial Kitchen (Pilot)" data-description="This project typology applies to new and existing buildings and addresses the full scope of project design and construction as well as aspects of building operations. It is relevant for office buildings where a minimum of 90% of the total floor area is occupied by the building owner and is operated by the same management.">
+						
+
+						<figure class="thumbnail-typology">
+							<img src="style/assets/img/interior-thumb.png" alt="img01" />
+							<figcaption class="thumbnail-typology-text">Commercial Kitchen (Pilot)</figcaption>
+                        </figure>
+						</a>
+					</li>
+				</ul>
+			
+			</div>
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="style/js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+			});
+		</script>
+	</body>
+</html>
